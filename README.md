@@ -1,0 +1,2 @@
+# first_mybatis
+第一次使用mybaits来对数据库进行增删改查的操作
