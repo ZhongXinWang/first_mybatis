@@ -2,9 +2,8 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration> 
-
  <typeAliases>
- <typeAlias alias="User"  type="com.yihaomen.mybatis.model.User"/>
+ <typeAlias alias="User"  type="com.wzx.mybatis.model.User"/>
  </typeAliases>
  <!-- 指定开发环境 为development
  默认的环境 ID（比如:default=”development”）。
@@ -25,17 +24,17 @@ JDBC – 这个配置就是直接使用了 JDBC 的提交和回滚设置，它�
  -->
  <dataSource type="POOLED">
  <!-- 指定驱动程序 -->
- <property name="drive" value="com.mysql.jdbc.Driver"/>
+ <property name="driver" value="com.mysql.jdbc.Driver"/>
  <property name="url" value="jdbc:mysql://127.0.0.1:3306/mybit"/>
  <property name="username" value="root"/> 
  <property name="password" value="mysqladmin"/>
  </dataSource>
  </environment>
 </environments>
-<mappers>
+ <mappers>
 <!-- 映射，告诉java怎么取找数据 -->
-        <mapper resource="com/yihaomen/mybatis/model/User.xml"/>
-        
+  <mapper resource="com/wzx/mybatis/model/User.xml"/>
+  
 </mappers>
 </configuration>
  
